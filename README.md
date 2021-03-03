@@ -9,13 +9,14 @@
 
 
 2. **find()**
+	<br>
 	<code>
 		data = prox.find(2)
 	</code>
 	* find(index)
 	* visit the web pages and scrape data 
 	* https://www.sslproxies.org   -> find(1) 
-	* https://free-proxy-list.net -> find(2)
+	* https://free-proxy-list.net  -> find(2)
 
 
 	* returned data is going to be is a json format
@@ -56,7 +57,9 @@
 	* it is going to setup a excel file
 	<br>
 	| ip       | port | http | https |
+	<br>
 	|----------|------|------|-------|
+	<br>
 	| xx.xx.xx | xxxx | True | False |
 	<br>
 
