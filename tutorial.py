@@ -31,7 +31,7 @@ prox.save("data_test",data)
 #prox.save_data("data_test",data)
 
 ''' so u can load it using load_data() '''
-prox.load_data("data_test")
+print(prox.load_data("data_test"))
 '''
 return a json like 
 {
