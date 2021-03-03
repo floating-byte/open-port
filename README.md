@@ -1,5 +1,8 @@
 # Basic Stuff:
-
+0. **requirement**
+	<code>
+		pip install -r requirements.txt
+	</code>
 1. **prox_master()**
 	* import openport and create obj 
 	<code>
