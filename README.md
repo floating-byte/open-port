@@ -4,6 +4,9 @@
 	* import openport and create obj 
 	<code>
 		import openport
+	</code>
+	<br>
+	<code>
 		prox = openport.prox_master()
 	</code>
 
@@ -41,7 +44,7 @@
 
 
 
-5. **json formt**
+5. **json**
 	```json
 	{
 	  "ip": "123.123.21.2",
@@ -58,13 +61,13 @@
 		prox.setup_file("file_name")
 	</code>
 	* setup_file(file_name) 
-	* it is going to setup a excel file
+	* its going to setup a excel file
 2. **save()**
 	<br>
 	<code>
 		prox.save("prox_test")
 	</code>
 	* save(file_name,data)
-	* when you use this its  just going to save data and wont check repeated data
+	* its going to save data and wont check repeated proxies
 
 
