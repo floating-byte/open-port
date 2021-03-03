@@ -1,6 +1,6 @@
 # Basic Stuff:
 
-1. **Create prox_master obj**
+1. Create prox_master obj
 'import openport'
 'prox = openport.prox_master()'
 <\br>
