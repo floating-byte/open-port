@@ -22,6 +22,7 @@
 	* returned data is going to be is a json format
 
 3. **save()**
+	<br>
 	<code>
 		prox.save("prox_test",data)
 	</code>
@@ -31,6 +32,7 @@
 
 
 4. **load_data()**
+	<br>
 	<code>
 		data = prox.load_data("prox_test")
 	</code>
@@ -42,29 +44,23 @@
 5. **json formt**
 	```json
 	{
-	  "ip": 123.123.21.2,
+	  "ip": "123.123.21.2",
 	  "port": 80,
-	  "http": False,
-	  "https": True
+	  "http": "False",
+	  "https": "True",
 	}
 	```
 
 ## Notes 
 1. **setup_file()**
+	<br>
 	<code>
 		prox.setup_file("file_name")
 	</code>
 	* setup_file(file_name) 
 	* it is going to setup a excel file
-	<br>
-	| ip       | port | http | https |
-	<br>
-	|----------|------|------|-------|
-	<br>
-	| xx.xx.xx | xxxx | True | False |
-	<br>
-
 2. **save()**
+	<br>
 	<code>
 		prox.save("prox_test")
 	</code>
