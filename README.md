@@ -42,9 +42,10 @@
 5. **json formt**
 	```json
 	{
-	  "firstName": "John",
-	  "lastName": "Smith",
-	  "age": 25
+	  "ip": 123.123.21.2,
+	  "port": 80,
+	  "http": False,
+	  "https": True
 	}
 	```
 
