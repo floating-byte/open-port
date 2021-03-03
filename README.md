@@ -1,83 +1,70 @@
 # Basic Stuff:
 
-1. **Create prox_master obj**
-<br>
-<code>
-	import openport
-	prox = openport.prox_master()
-</code>
-<br>
+1. **prox_master()**
+	* import openport and create obj 
+	<code>
+		import openport
+		prox = openport.prox_master()
+	</code>
+
+
 2. **find()**
-<br>
-- find(index)
-<br> 
-- visit the web pages and scrape data 
-<br>
-- https://www.sslproxies.org   -> find(1) 
-<br>
-- https://free-proxy-list.net -> find(2)
-<br>
-<code>
-	data = prox.find(2)
-</code>
-<br>
-- returned data is going to be is a json format
-<br>
+	<code>
+		data = prox.find(2)
+	</code>
+	* find(index)
+	* visit the web pages and scrape data 
+	* https://www.sslproxies.org   -> find(1) 
+	* https://free-proxy-list.net -> find(2)
+
+
+	* returned data is going to be is a json format
 
 3. **save()**
-<br>
-- save(file_name,data)
-<br>
-- when you use save u dont have to care about repeated data
-<br>
-<code>
-	prox.save("prox_test",data)
-</code>
+	<code>
+		prox.save("prox_test",data)
+	</code>
+	* save(file_name,data)
+	* when you use save u dont have to care about repeated data
 
-<br>
+
 
 4. **load_data()**
-<br>
-- load_data(file_name)
-<br>
-- if you have a excel file with data load will just load the file and return a json 
+	<code>
+		data = prox.load_data("prox_test")
+	</code>
+	* load_data(file_name)
+	* if you have a excel file with data load will just load the file and return a json 
 
-<code>
-	data = prox.load_data("prox_test")
-</code>
-<br>
+
 
 5. **json formt**
-<code>
-{
-	"ip":xxx.xx.xx.x,
-	"port":xx,
-	"http":True,
-	"https":True
-}	
-</code>
-<br>
+	```json
+	{
+	  "firstName": "John",
+	  "lastName": "Smith",
+	  "age": 25
+	}
+	```
 
 ## Notes 
 1. **setup_file()**
-- setup_file(file_name) 
-<br>
-- it is going to setup a excel file
-<br>
-| ip       | port | http | https |
-|----------|------|------|-------|
-| xx.xx.xx | xxxx | True | False |
-<br>
-<code>
-	prox.setup_file("file_name")
-</code>
-<br>
+	<code>
+		prox.setup_file("file_name")
+	</code>
+	* setup_file(file_name) 
+	* it is going to setup a excel file
+	<br>
+	| ip       | port | http | https |
+	|----------|------|------|-------|
+	| xx.xx.xx | xxxx | True | False |
+	<br>
+
 2. **save()**
-<br>
-- save(file_name,data)
-<br>
-- when you use this its  just going to save data and wont check repeated data
-<code>
-	prox.save("prox_test")
-</code>
+	<code>
+		prox.save("prox_test")
+	</code>
+	* save(file_name,data)
+	* when you use this its  just going to save data and wont check repeated data
+
 
